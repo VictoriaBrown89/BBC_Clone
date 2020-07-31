@@ -1,0 +1,503 @@
+<html>
+
+    <head>
+        
+        <title>BBC News Webpage With CSS - Example</title>
+        
+        <style type="text/css">
+            
+            .topbar {
+                width: 1000px;
+                margin: 0 auto;
+                height: 40px;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            
+            .BBC-image {
+                margin-top: 8px;
+                width: 90px;
+                float: left;
+                margin-right: 8px;
+            }
+            
+            .topbar-section {
+                float: left;
+                border-left: 1px #CCCCCC solid;
+                height: 110%;
+            }
+            
+            #signin-img {
+                width:25px;
+                margin: 12px 15px;
+                float: left;
+            }
+            
+            #signin-text {
+                font-size: 90%;
+                font-weight: bold;
+                position:relative;
+                top: 15px;
+            }
+            
+            .crooked-bar {
+                float: left;
+                height: 110%;
+                margin-left: 30px;
+            }
+            
+            .topbar-news {
+                float: left;
+                height: 100%;
+            }
+            
+            .topbar-menu {
+                font-weight: bold;
+                font-size: 90%;
+                padding: 14px 15px 0px 15px;
+                height: 30px;
+            }
+            
+            #more-img {
+                width: 7px;
+                margin-left: 15px;
+                padding-bottom: 3px;
+            }
+            
+            #search-box {
+                background-color: #E4E4E4;
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 6px;
+                margin: 5px 0px 5px 5px;
+                float: left;
+            }
+            
+            #mag-glass {
+                height: 28px;
+                margin-top: 5px;
+            }
+            
+            .clear {
+                clear: both;
+            }
+            
+            #menu-bar-container {
+                background-color: #BB1919;
+                width: 100%;
+                height: 70px;
+                border-top: 1px #CCCCCC solid;
+            }
+            
+            #menu-bar {
+                width: 1000px;
+                margin: 0px auto;
+                padding-left: 3px;
+            }
+            
+            h1 {
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size:40px;
+                font-weight: normal;
+                padding-top: 12px;
+            }
+            
+            #local {
+                float: right;
+                border: 1px #BB4545 solid;
+                width: 190px;
+                padding: 5px 5px 0px 10px;
+                margin: 5px 10px 0 0;
+                position: relative;
+                top: -40px;
+                
+            }
+            
+            #local a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                position: relative;
+                top: -3px;
+                left: 20px;
+                
+                
+            }
+            
+            #local a:hover {
+                text-decoration: underline;
+            }
+            
+            .red-menu-container {
+                background-color: #A91717;
+                width: 100%;
+            }
+            
+            #red-menu {
+                width: 1000px;
+                margin:0 auto;
+                height: 35px;
+            }
+            
+            #red-menu a {
+                color: white;
+                text-decoration: none;
+                margin-top: 5px;
+                padding: 0 10px;
+                border-right: 1px #BB4545 solid;
+                font-size: 9px;
+                position: relative;
+                top: 8px;
+            }
+            
+            #red-menu a:hover {
+                text-decoration: underline;
+            }
+            
+            #no-border {
+                border: none ! important;
+            }
+            
+            #red-arrow {
+                height: 6px;
+                top: 8px;
+                position: relative;
+            }
+            
+            .page-container {
+                width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .main-article {
+                
+            }
+            
+            #tech-intro {
+                font-weight: normal;
+                margin-top: 20px;
+                font-size:20px;
+                border-bottom: 4px solid #A91717;
+                width: 105px;
+            }
+            
+            h3 a {
+                color: black;
+                font-size: 28px;
+                text-decoration: none;
+            }
+            
+            h3 a:hover {
+                color:#1167A8;
+            }
+            
+            #article-summary {
+                color:#5A5A5A;
+                width: 220px;
+                float: left;
+            }
+            
+            #article-container {
+                width: 700px;
+                border-right: 1px solid #CCCCCC;
+                float: left;
+            }
+            
+            #clock-image {
+                width:20px;
+                padding-right: 8px;
+                position: relative;
+                top: -1px;
+            }
+            
+            #date-time {
+                font-weight: normal;
+                padding-right: 8px;
+                color: #5A5A5A;
+                font-size: 12px;
+                position: relative;
+                top: -5px;
+            }
+            
+            #section-under-art {
+                position: relative;
+                top: -5px;
+            }
+            
+            #section-under-art a {
+                font-weight: normal;
+                padding-left: 8px;
+                border-left: 1px solid #CCCCCC;
+                color: #A61B1B;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            
+            #section-under-art a:hover {
+                color: #1167A8;
+            }
+            
+            #asda-image {
+                width: 400px;
+                padding-left: 30px;
+            }
+            
+            #article-hr {
+                border-top:1px solid #A61B1B;
+                width: 50px;
+                position: relative;
+                top: -2px;
+            }
+            
+            #links-divide {
+                margin-top: 12px;
+                width: 650px;
+            }
+            
+            #links-under-main a {
+                text-decoration: none;
+                font-size: 14px;
+                color: black;
+            }
+            
+            #links-under-main a:hover {
+                color:#1167A8;
+            }
+            
+            .watch-listen {
+                
+            }
+            
+            h5 {
+                font-weight: normal;
+                font-size: 25px;
+                margin-left: 720px;
+                margin-top: 32px;
+    
+            }
+            
+            #video-one {
+                width: 140px;
+                padding-left: 22px;
+                position: relative;
+                top: -30px;
+                float: left;
+            }
+            
+            #video-two {
+                width: 140px;
+                padding-left: 22px;
+                position: relative;
+                top: -40px;
+                float: left;
+            }
+            
+            #video-three {
+                width: 140px;
+                padding-left: 22px;
+                position: relative;
+                top: -60px;
+                float: left;
+            }
+            
+            #video-links-one {
+                padding-left: 870px;
+                position: relative;
+                top: -30px;
+            }
+            
+            #video-links-two {
+                padding-left: 870px;
+                position: relative;
+                top: -40px;
+            }
+            
+            #video-links-three {
+                padding-left: 870px;
+                position: relative;
+                top: -60px;
+            }
+            
+            .video-summary a {
+                font-weight: bold;
+                font-size: 13px;
+                color: black;
+                text-decoration: none;
+            }
+            .video-summary a:hover {
+                color:#1167A8;
+            }
+            
+            #time-video-one {
+                position: relative;
+                top: -5px;
+            }
+           
+            #time-video-two {
+                position: relative;
+                top: -10px;
+            }
+            
+            #time-video-three {
+                position: relative;
+                top: -25px;
+            }
+            
+    
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="topbar">
+            
+            <image src="BBC_logo.png" class="BBC-image"></image>
+            
+            <div id="signin-div" class="topbar-section">
+                <img id="signin-img" src="SignInImage.png">
+                <span id="signin-text">Sign in</span>
+            </div>
+            
+            <div id="bardiv">
+                <img class="crooked-bar" src="CrookedBar.png">
+            </div>
+            
+            <div class="topbar-news topbar-menu">
+                News
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                Sports
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                Weather
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                iPlayer
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                TV
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                Radio
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                More
+                <img id="more-img" src="MoreArrow.png">
+            </div>
+            
+            <div class="topbar-section">
+                <input id="search-box" type="text" value="Search">
+                <img src="SearchMG.png" id="mag-glass">
+            </div>
+            
+        </div>
+        
+        <div class="clear"></div>
+            
+        <div id="menu-bar-container">
+                
+            <div id="menu-bar">
+                <h1>NEWS</h1>
+                    
+                <div id="local">    
+                    <a href="">Find local news</a>
+                </div>
+                    
+            </div>
+                
+        </div>
+                
+        <div class="red-menu-container">
+        
+           <div id="red-menu">
+            
+               <a href="">Home</a>
+               <a href="">UK</a>
+               <a href="">World</a>
+               <a href="">Business</a>
+               <a href="">Politics</a>
+               <a href="">Tech</a>
+               <a href="">Science</a>
+               <a href="">Health</a>
+               <a href="">Education</a>
+               <a href="">Entertainment &amp; Arts</a>
+               <a href="">Video &amp; Audio</a>
+               <a href="" id="no-border">More</a>
+               <img id="red-arrow" src="RedMoreArrow.png">
+            
+            </div> 
+        
+        </div>
+        
+        <div class="page-container">
+        
+            <div class="main-article">
+            
+                <h2 id="tech-intro">Technology</h2>
+                
+                <div id="article-container">
+                    <h3><a href="">Asda bug exposed payment details</a></h3>
+                    <div id="article-summary">Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.
+                
+                        <div id="date-timer">
+                    
+                            <h4><img id="clock-image" src="ClockImg.png"><span id="date-time">2 Hours Ago</span><span id="section-under-art"><a href="">Technology</a></span></h4>
+                            
+                            <hr id="article-hr" align="left">
+                            
+                            <p id="links-under-main"><a href="">Surveillance firm hit in hack attack</a></p>
+                            <p id="links-under-main"><a href="">eBay flaw has existed for months</a></p>
+                        </div>
+
+                    </div>
+                    
+                    <img id="asda-image" src="ASDAimage.png">
+                    
+                    <hr id="links-divide">
+                    
+                </div>
+                
+                <div class="watch-listen">
+                
+                    <h5>Watch/Listen</h5>
+                    
+                    <img id="video-one" src="Video1.png">
+                    <div id="video-links-one"><p class="video-summary">
+                        <a href="">UK science chief backs blockchains</a></p>
+                        <h6 id="time-video-one"><img id="clock-image" src="ClockImg.png"><span id="date-time">1 Hour Ago</span></h6>
+                    </div>
+                    
+                    
+                    <img id="video-two" src="Video2.png">
+                    <div id="video-links-two"><p class="video-summary">
+                        <a href="">Drone register gives 'accountability'</a></p>
+                        <h6 id="time-video-two"><img id="clock-image" src="ClockImg.png"><span id="date-time">18 January 2016</span><span id="section-under-art"><a href="">Technology</a></span></h6>
+                    </div>
+                    
+                    <img id="video-three" src="Video3.png">
+                    <div id="video-links-three"><p class="video-summary">
+                        <a href="">SpaceX rocket explodes during landing</a></p>
+                        <h6 id="time-video-three"><img id="clock-image" src="ClockImg.png"><span id="date-time">18 January 2016</span><span id="section-under-art"><a href="">Science &amp; Entertainment</a></span></h6>
+                    </div>
+            
+                </div>
+                
+            </div>
+            
+        
+        </div>
+    </body>
+</html>
